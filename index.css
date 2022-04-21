@@ -1,0 +1,177 @@
+:root{
+    --veryLightGray : hsl(0, 66%, 10%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    background-image: url('https://images.fineartamerica.com/images-medium-large-5/world-map-in-glow-red-andrew-fare.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+
+    transition: 0.2s;
+}
+::placeholder{
+    color: var(--textColor);
+}
+
+.flag{
+    width: 18rem;
+    height: 12rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.countries-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 3rem;    
+    
+}
+
+.country-item{
+    width: 18rem;
+    background-color: rgb(167, 24, 24);
+    border-radius: 0.5rem;
+    color:black;
+    
+}
+.country-item:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    
+}
+
+
+.country-item h3{
+    padding: 1rem;
+}
+
+.country-item ul{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.details-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
+}
+
+.text-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2em;
+    padding: 2em;
+}
+
+.text-grid > h3{
+    grid-column: 1/5;
+}
+
+.text-grid > .stats {
+    background-color: rgb(13, 97, 13);
+    list-style: none;
+    grid-column: 1/5;
+    height: 200px;
+    
+}
+
+.text-grid > .border-countries-box{
+    grid-column: 0.5;
+}
+
+.text-grid > p:nth-child(even) {
+    grid-column: 1/3;
+}
+
+.text-grid > p:nth-child(odd) {
+    grid-column: 3/5;
+}
+
+.text-grid > p{
+    font-weight: bold;
+}
+
+.text-grid > p > span{
+    font-weight:normal;
+}
+
+.details-flag{
+    align-self: center;
+    justify-self: center;
+}
+
+.details-flag > img {
+    width: 30rem;
+}
+
+.neighboring-countries{
+    grid-column: 2/3;
+    /* grid-row: 4/5; */
+}
+
+.neighboring-countries{
+    list-style: none;
+    display: contents;
+    gap: 1em;
+}
+
+.border-countries-box{
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.neighboring-countries > li {
+    border: 2px solid #efefef;
+    border-radius: 2px;
+    padding: 0.25em 1em;
+    align-self: center;
+}
+
+.neighboring-countries > li:hover {
+    cursor: pointer;
+}
+
+.details-section{
+    display: none;
+}
+#head{
+
+    text-align: center;
+    font-size: 25px;
+    width:auto;
+    height:80px;
+    color: rgb(167, 24, 24);
+}
+h2{
+    padding:10px;
+} 
+.list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    column-gap: 40px;
+    row-gap: 50px;
+    
+
+}
+#pagination{
+    padding-top: 800px;
+   
+}
+button{
+    position: relative;
+    top: 65px;
+    background-color: black;
+    color:red;
+}
